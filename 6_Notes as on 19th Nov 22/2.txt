@@ -1,0 +1,121 @@
+const App=()=>{
+    const handleClick=()=>{
+        console.log("I am here");
+    }
+    return(
+        <div>
+            <h1>App Component</h1>
+            <input type="button" value="Click ME" onClick={handleClick} />
+        </div>
+    );
+}
+export default App;
+
+------------------------------------------------------------------------
+const App=()=>{
+    const handleClick=()=>{
+        console.log("I am here");
+    }
+    const handleUpdate=()=>{
+        console.log("from handle update");
+    }
+    return(
+        <div>
+            <h1>App Component</h1>
+            <input type="button" value="Click ME" onClick={handleClick} />
+            <input type="button" value="Update ME" onClick={handleUpdate} />
+        </div>
+    );
+}
+export default App;
+-----------------------------------------------------------------
+const App=()=>{
+   
+
+    const handleClick=(evt)=>{
+        console.log("from handle click");
+        console.log(evt.target);
+        console.log("type : ",evt.target.type);
+        console.log("value : ",evt.target.value);
+        console.log("name : ",evt.target.name);
+        console.log("id : ",evt.target.id);
+
+
+        /*
+        if(evt.target.value==="add")
+        {
+            console.log("add logic goes here");
+        }
+        else if(evt.target.value==="sub")
+        {
+            console.log("sub logic goes here");
+        }
+        */
+       const v=evt.target.value;
+       if(v==="add")
+       {
+           console.log("add logic goes here");
+       }
+       else if(v==="sub")
+       {
+           console.log("sub logic goes here");
+       }
+
+        console.log("---------------------------");
+    }
+    return(
+        <div>
+            <h1>App Component</h1>
+            <input type="button" name="btn1" id="b1" value="add" onClick={handleClick} />
+            <input type="button" name="btn2" id="b2" value="sub" onClick={handleClick} />
+        </div>
+    );
+}
+export default App;
+------------------------------------------------------------
+const App=()=>{
+   
+
+    const handleClick=(evt,no=0)=>{
+        console.log("from handle click");
+        console.log("number is : ",no);
+        console.log(evt.target);
+        console.log("type : ",evt.target.type);
+        console.log("value : ",evt.target.value);
+        console.log("name : ",evt.target.name);
+        console.log("id : ",evt.target.id);
+
+
+        /*
+        if(evt.target.value==="add")
+        {
+            console.log("add logic goes here");
+        }
+        else if(evt.target.value==="sub")
+        {
+            console.log("sub logic goes here");
+        }
+        */
+       const v=evt.target.value;
+       if(v==="add")
+       {
+           console.log("add logic goes here");
+       }
+       else if(v==="sub")
+       {
+           console.log("sub logic goes here");
+       }
+
+        console.log("---------------------------");
+    }
+    return(
+        <div>
+            <h1>App Component</h1>
+            <input type="button" name="btn1" id="b1" value="add" 
+                onClick={(e)=>handleClick(e,8000)} />
+            <input type="button" name="btn2" id="b2" value="sub" 
+                onClick={handleClick} />
+        </div>
+    );
+}
+export default App;

@@ -1,0 +1,112 @@
+import {useEffect} from 'react';
+const App=()=>{   
+
+    useEffect(()=>{
+        console.log("I am here");
+    });
+
+    console.log("before return"); 
+    return(
+        <>
+           <h1>App Component</h1>
+           <p>
+                some text goes here
+           </p>
+        </>
+    );
+}
+export default App;
+--------------------------------------------------------
+import {useEffect,useState} from 'react';
+const App=()=>{   
+
+    const[count,setCount]=useState(0);
+    useEffect(()=>{
+        console.log("I am here");
+    });
+
+    console.log("before return"); 
+    return(
+        <>
+           <h1>App Component</h1>
+           <p>
+                Count is : {count} <br />
+                <input type="button" value="Increment" onClick={()=>setCount(count+1)} />
+           </p>
+        </>
+    );
+}
+export default App;
+---------------------------------------------------------
+import {useEffect,useState} from 'react';
+const App=()=>{   
+
+    const[count,setCount]=useState(0);
+    useEffect(()=>{
+        console.log("I am here");
+    },[]);
+
+    console.log("before return"); 
+    return(
+        <>
+           <h1>App Component</h1>
+           <p>
+                Count is : {count} <br />
+                <input type="button" value="Increment" onClick={()=>setCount(count+1)} />
+           </p>
+        </>
+    );
+}
+export default App;
+------------------------------------------------------------------
+import {useEffect,useState} from 'react';
+const App=()=>{   
+
+    const[count,setCount]=useState(0);
+    const[no,setNo]=useState(parseInt(Math.random()*500));
+    useEffect(()=>{
+        console.log("I am here");
+    },[count]);
+
+    console.log("before return"); 
+    return(
+        <>
+           <h1>App Component</h1>
+           <p>
+                Count is : {count} <br />
+                <input type="button" value="Increment" onClick={()=>setCount(count+1)} />
+                <br /> <br />
+                Number is : {no} <br />
+                <input type="button" value="Generate random no" onClick={()=>setNo(parseInt(Math.random()*500))} />
+                
+           </p>
+        </>
+    );
+}
+export default App;
+------------------------------------------------------------------------
+import {useEffect,useState} from 'react';
+const App=()=>{   
+
+    const[count,setCount]=useState(0);
+    const[no,setNo]=useState(parseInt(Math.random()*500));
+    useEffect(()=>{
+        console.log("I am here");
+    },[count,no]);
+
+    console.log("before return"); 
+    return(
+        <>
+           <h1>App Component</h1>
+           <p>
+                Count is : {count} <br />
+                <input type="button" value="Increment" onClick={()=>setCount(count+1)} />
+                <br /> <br />
+                Number is : {no} <br />
+                <input type="button" value="Generate random no" onClick={()=>setNo(parseInt(Math.random()*500))} />
+                
+           </p>
+        </>
+    );
+}
+export default App;

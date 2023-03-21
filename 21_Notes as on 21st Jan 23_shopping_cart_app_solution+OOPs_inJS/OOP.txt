@@ -1,0 +1,72 @@
+Class vs Object
+-------------------------?
+Map => class
+Houses based on map => objects
+
+
+			XYZ-23     ... specification .. (class)
+ 
+attributes / properties
+-----------------------
+screen size		:		5
+color			:		red | black | silver
+os			:		android
+number of buttons	:		4
+...
+
+behaviour / functionality
+-------------------------
+make a call
+receive a call
+send sms
+recieve sms
+alarm
+stopwatch
+game
+browser
+...
+
+
+30000 mobiles (objects)
+
+
+
+class => blueprint or design or specification for an object
+
+
+object => real implemenation or actual implementation of class
+	or
+	instance of class
+
+-----------------------
+Syntax in JavaScript
+
+
+
+	class class_name
+	{
+		// members of class
+
+		variables	// properties or attributes
+		functions or method	// behaviour or functionality
+	}
+
+<script>
+        "use strict";
+        class Demo
+        {
+            no=123;
+            show()
+            {
+                console.log("show from Demo");
+            }
+        }
+        const d=new Demo();
+        console.log(d.no);
+        d.show();
+
+        console.log(new Demo().no);
+        new Demo().show();
+        console.log("---------------");
+        
+    </script>

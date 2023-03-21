@@ -1,0 +1,20 @@
+State => To manage data at component level.
+		useState
+		or
+		useReducer
+
+
+
+------------------------------------------------------------
+Context =>
+		To manage data at application / global level
+
+		useContext + useState
+		
+
+		or
+		
+
+		useContext + useReducer
+		or
+		Redux

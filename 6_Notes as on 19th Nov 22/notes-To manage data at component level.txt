@@ -1,0 +1,6 @@
+State => To manage data at component level.
+	
+
+	useState
+	or
+	useReducer

@@ -1,0 +1,141 @@
+const App=()=>{ 
+    const age=27;   
+    return(
+        <>
+            <h1>App Component</h1>
+            {
+                age>=18 && <h2>Vote can be given</h2>
+            }
+        </>
+    );
+}
+export default App;
+---------------------------------------
+const App=()=>{ 
+    const age=27;   
+    return(
+        <>
+            <h1>App Component</h1>
+            {
+                age>=18 && 
+                <> 
+                    <h2>Vote can be given</h2> 
+                    <h3>Oh wow!!!</h3> 
+                </>
+            }
+        </>
+    );
+}
+export default App;
+------------------------------------
+const App=()=>{ 
+    const age=12.55;   
+    return(
+        <>
+            <h1>App Component 3.0</h1>
+            {
+                age && 
+                <> 
+                    <h2>Vote can be given</h2> 
+                    <h3>Oh wow!!!</h3> 
+                </>
+            }
+        </>
+    );
+}
+export default App;
+---------------------------------------
+const App=()=>{ 
+    const age=0;   
+    return(
+        <>
+            <h1>App Component 3.0</h1>
+            {
+                age && 
+                <> 
+                    <h2>Vote can be given</h2> 
+                    <h3>Oh wow!!!</h3> 
+                </>
+            }
+        </>
+    );
+}
+export default App;
+-----------------------------------------
+const App=()=>{ 
+    const age=27;   
+    return(
+        <>
+            <h1>App Component</h1>
+            {
+                age>=18 ? <h2>Vote can be given</h2> : <h2>Vote cannot be given</h2>
+
+            }
+        </>
+    );
+}
+export default App;
+---------------------------------------------
+const App=()=>{ 
+    const age=27;   
+    return(
+        <>
+            <h1>App Component</h1>
+            {
+                age>=18 ? 
+                <>
+                    <h2>Vote can be given</h2> 
+                    <h4>oh wow</h4> 
+                </>
+                : 
+                <>
+                    <h2>Vote cannot be given</h2>
+                    <h4>oh no</h4>
+                </>                
+            }
+        </>
+    );
+}
+export default App;
+--------------------------------------------------
+const App=()=>{ 
+    const age=17;   
+    return(
+        <>
+            <h1>App Component</h1>
+            {
+                age>=18 ? 
+                <>
+                    <h2>Vote can be given</h2> 
+                    <h4>oh wow</h4> 
+                </>
+                : 
+                null             
+            }
+        </>
+    );
+}
+export default App;
+-------------------------------------------------
+const App=()=>{ 
+    const age=27; 
+    let output=null;
+    if(age>=18)
+    {
+        output=(
+            <>
+                <h2>Vote can be given</h2>
+                <p>Good news!!</p>
+            </>
+        );
+    } 
+    
+    return(
+        <>
+            <h1>App Component</h1>
+            {output}
+        </>
+    );
+}
+export default App;
+------------------------------------------------------

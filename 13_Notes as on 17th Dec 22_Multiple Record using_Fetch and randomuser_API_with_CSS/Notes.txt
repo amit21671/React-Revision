@@ -1,0 +1,40 @@
+Ways of HTTP Request
+----------------------
+
+*) Put the URL in the address bar of the browser and hit enter
+*) Click on the hyerlink
+*) Submit the form
+*) By/via programming 
+
+Methods of HTTP Request
+------------------------
+GET		(default)
+POST
+PUT
+PATCH
+DELETE
+------------------------------------------------------------
+API (application programming interface)
+https://randomuser.me/api/
+https://randomuser.me/api/?results=50
+JSON
+-----
+JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate.
+
+
+ <script>
+        "use strict";
+        const obj={roll:1001,name:'nitin',address:'pitampura'};
+        console.log(obj);
+        console.log(typeof(obj));
+        console.log("--------------------------");
+        const str=JSON.stringify(obj);
+        console.log(str);
+        console.log(typeof(str));
+        console.log("---------------------------");
+        const newObj=JSON.parse(str);
+        console.log(newObj);
+        console.log(typeof(newObj));
+        
+    </script>
+

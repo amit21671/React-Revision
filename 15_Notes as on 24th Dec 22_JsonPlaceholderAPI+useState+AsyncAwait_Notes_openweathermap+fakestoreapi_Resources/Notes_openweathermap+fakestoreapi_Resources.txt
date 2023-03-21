@@ -1,0 +1,26 @@
+ecdf0d3a10c430f1a90e79bdb3cace1a
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=ecdf0d3a10c430f1a90e79bdb3cace1a
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=ecdf0d3a10c430f1a90e79bdb3cace1a&units=metric
+
+
+
+http://openweathermap.org/img/wn/10d@2x.png
+
+http://openweathermap.org/img/wn/50n@2x.png
+
+
+07344a8f9a6f3a249c9b75da228937e3
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+https://fakestoreapi.com/products
+https://fakestoreapi.com/products/11
+
+

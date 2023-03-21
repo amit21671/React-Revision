@@ -1,0 +1,325 @@
+<script>
+        "use strict";
+        function code()
+        {
+            console.log("from code");
+        }
+        const show=function()
+        {
+            console.log("from show");
+        }
+        const display=()=>{
+            console.log("from display");
+        }
+        code();
+        show();
+        display();
+
+    </script>
+
+
+<script>
+        "use strict";
+        const show=(roll,name)=>{
+            console.log("Roll : ",roll);
+            console.log("Name : ",name);
+            console.log("---------------");
+        }
+
+        show(1100,"amit");
+        show(1200);
+        show();
+    </script>
+
+
+<script>
+        "use strict";
+        const show=(roll=0,name="not given")=>{
+            console.log("Roll : ",roll);
+            console.log("Name : ",name);
+            console.log("---------------");
+        }
+
+        show(1100,"amit");
+        show(1200);
+        show();
+    </script>
+
+<script>
+        "use strict";
+        const add=(fn,sn)=>{
+            return fn+sn;
+        }
+
+        console.log(add(30,40));
+        console.log("----------------");
+        const x=30,y=20;
+        const z=add(x,y);
+        console.log(z);
+    </script>
+
+ <script>
+        "use strict";
+        //const add=(fn,sn)=>{return fn+sn;}
+        const add=(fn,sn)=>fn+sn;
+        console.log(add(30,40));
+        console.log("----------------");
+        const x=30,y=20;
+        const z=add(x,y);
+        console.log(z);
+    </script>
+
+<script>
+        "use strict";
+        //const code=(no)=>{return no*no;};
+        const code=no=>no*no;
+        console.log(code(15));
+    </script>
+
+ <script>
+        "use strict";        
+        const code=()=>5000;
+        console.log(code());
+    </script>
+
+<script>
+        "use strict";        
+        const records=[
+                        {roll:1001,name:'amit'},
+                        {roll:1002,name:'sumit'},
+                        {roll:1003,name:'rohit'},
+                        {roll:1004,name:'sohit'},
+                        {roll:1005,name:'mohit'},
+                      ];
+        console.log(records);
+        for(let row of records)
+        {
+            console.log("Roll : ",row.roll);
+            console.log("Name : ",row.name);
+            console.log("-------------------------");
+        }
+    </script>
+
+<script>
+        "use strict";        
+        const arr=["red","green","blue"];
+        //const str=arr.join();
+        //const str=arr.join("");
+        const str=arr.join(" ");
+        console.log(str);
+        console.log(typeof(str));
+    </script>
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        console.log(arr.length);
+        console.log(arr[2]);
+        console.log("------------------");
+        for(let i=0;i<arr.length;i++)
+        {
+            console.log(arr[i]);
+        }
+        console.log("-------test-----------");
+        for(let v of arr)
+        {
+            console.log(v);
+        }
+    </script>
+
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        //console.log(arr.push(80));       
+
+        /*
+        const newLen=arr.push(80);
+        console.log(newLen);
+        */
+        arr.push(80);
+        console.log(arr.pop(), " deleted");
+
+        arr.unshift(5);
+        console.log(arr.shift()," : deleted");
+        console.log(arr);
+    </script>
+
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        //arr[2]=33;
+        
+        /*
+        const data=arr.splice(3);
+        console.log("deleted  : ",data);
+        */
+        //arr.splice(3,2);
+        //arr.splice(3,0,35);
+        arr.splice(3,1,35);
+        console.log(arr);
+    </script>
+
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        //const y=arr.slice();
+        //const y=arr.slice(3,6);
+        const y=arr.slice(3);
+        console.log("arr : ",arr);
+        console.log("y : ",y);
+    </script>
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        arr.map(no=>{
+            console.log(no);
+        });
+    </script>
+
+ <script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        arr.map((no,i)=>{
+            console.log(no," : ",i);
+        });
+    </script>
+
+<script>
+        "use strict";        
+        const arr=[10,20,30,40,50,60,70];
+        const y=arr.map(no=>{
+                return no*10;
+        });
+
+        console.log("arr : ",arr);
+        console.log("y : ",y);
+    </script>
+
+<script>
+        "use strict";        
+        const arr=[10,2,30,4,50,6,70];
+        //const y=arr.map(no=>no*10);
+        const y=arr.map(no=>{
+            if(no>=0 && no<=9)
+            {
+                return no*100;
+            }
+            else if(no>=10 && no<=99)
+            {
+                return no*10;
+            }
+        });
+        console.log("arr : ",arr);
+        console.log("y : ",y);
+    </script>
+
+
+<script>
+        "use strict";        
+        const arr=[56,45,89,123,47,99,432,49,94];
+        //const data=arr.find(no=>{return no>100});
+
+        //const data=arr.findIndex(no=>{return no>100}); // -1 for not found
+
+
+        //const data=arr.filter(no=>{return no>100});
+        const data=arr.filter(no=>no>100);
+        console.log(data);
+    </script>
+
+
+<script>
+        "use strict";        
+        const records=[
+                        {roll:1001,name:'amit'},
+                        {roll:1002,name:'sumit'},
+                        {roll:1003,name:'rohit'},
+                        {roll:1004,name:'sohit'},
+                        {roll:1005,name:'mohit'},
+                      ];
+        const r=1014;
+        const nm="Rajesh kumar";
+        const i=records.findIndex(row=>row.roll===r);        
+        if(i===-1)
+        {
+            records.push({roll:r,name:nm});
+            console.log("data has been added");
+        }
+        else 
+        {
+            console.log("Cannot add");
+        }        
+        for(let row of records)
+        {
+            console.log("Roll : ",row.roll);
+            console.log("Name : ",row.name);
+            console.log("-------------------------");
+        }
+    </script>
+
+
+<script>
+        "use strict";        
+        const records=[
+                        {roll:1001,name:'amit'},
+                        {roll:1002,name:'sumit'},
+                        {roll:1003,name:'rohit'},
+                        {roll:1004,name:'sohit'},
+                        {roll:1005,name:'mohit'},
+                      ];
+        const r=1004;       
+        const i=records.findIndex(row=>row.roll===r);        
+        if(i===-1)
+        {
+            console.log("Record not found");           
+        }
+        else 
+        {
+            records.splice(i,1);
+            console.log("data has been deleted");
+        }        
+        for(let row of records)
+        {
+            console.log("Roll : ",row.roll);
+            console.log("Name : ",row.name);
+            console.log("-------------------------");
+        }
+    </script>
+
+
+<script>
+        "use strict";        
+        const x=[10,20,30];
+        //const y=x.slice();
+        //const y=[...x];
+        const y=[...x,40,50];
+        console.log("x : ",x);
+        console.log("y : ",y);
+        console.log("---------------------------");
+        const student={roll:1001,name:'amit'};
+        //const newStudent={...student};
+        const newStudent={...student,name:'sohit',job:'gamer',place:'Noida'};
+        console.log("student : ",student);
+        console.log("newStudent : ",newStudent);
+    </script>
+
+
+<script>
+        "use strict";        
+        const show=(...data)=>{
+            console.log(data);
+            console.log(Array.isArray(data));
+            console.log("--------------------");
+        }
+
+
+        show();
+        show(10);
+        show(10,"hello");
+        show(10,"hello",34.55,true,"bye",999);
+
+    </script>
